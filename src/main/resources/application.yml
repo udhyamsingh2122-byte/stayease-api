@@ -1,29 +1,14 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:mem:stayease
     driver-class-name: org.h2.Driver
-    username: sa
-    password: 
+    username: root
+    password: root
 
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
-    show-sql: true
-
-  h2:
-    console:
-      enabled: true
+    show-sql: false
 
 server:
-  port: 8080
-
-
-
-
-logging:
-  level:
-    org.springframework.security: DEBUG
-    org.springframework.web: DEBUG
-
-
+  port: 10000
